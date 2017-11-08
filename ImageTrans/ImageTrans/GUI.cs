@@ -36,7 +36,7 @@ namespace ImageTrans
             {
                 dlg.Title = "Open Image";
                 dlg.Filter = "All Files (*.*)|*.*|bmp files (*.bmp)|*.bmp|png files (*.png)|*.png";
-                dlg.InitialDirectory = Directory.GetCurrentDirectory() + @"\Resources\";
+                dlg.InitialDirectory = Directory.GetCurrentDirectory() + @"\Images\";
 
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
@@ -56,7 +56,7 @@ namespace ImageTrans
         {
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = "Images|*.png;*.bmp;*.jpg";
-            sfd.InitialDirectory = Directory.GetCurrentDirectory() + @"\Resources\";
+            sfd.InitialDirectory = Directory.GetCurrentDirectory() + @"\Images\";
             ImageFormat format = ImageFormat.Png;
 
             if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
